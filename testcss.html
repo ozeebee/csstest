@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>untitled</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Alain Jossaert">
+	<!-- Date: 2011-11-30 -->
+	
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+<style>
+
+div#container {
+	margin: 20px auto;
+	background-color: #efefef;
+}
+
+div#content {
+	position:relative;
+	/*overflow: hidden;*/
+	width: 200px;
+	height: 200px;
+	background-color: #7f7f7f;
+}	
+
+div#content1 {
+	position:relative;
+	/*
+	right: 0px;
+	top: 0px;
+	*/
+	
+	width: 200px;
+	height: 200px;
+	background-color: #0066ff;
+}	
+
+div#content2 {
+	position:relative;
+	/*
+	right: -200px;
+	top: 0px;
+	*/
+	
+	width: 200px;
+	height: 200px;
+	background-color: #ff66ff;
+}
+
+div.slideLeft {
+	position:relative;
+
+	width: 200px;
+	height: 200px;
+	background-color: #ff66ff;
+
+	top:-200px;
+	
+	transition: all linear 1s;
+	-o-transition: all linear 1s;
+	-moz-transition: all linear 1s;
+	-webkit-transition: all linear 1s;
+}
+	
+</style>
+
+<script>
+function test() {
+	$('#content2').addClass("slideLeft");
+}
+</script>
+
+</head>
+<body>
+
+<h1>Css 3 Test</h1>
+
+<div>
+	Content Before
+</div>
+
+<div id="container">
+	<div id="content">
+		<div id="content1">
+			Content One
+		</div>
+		<div id="content2">
+			Content Two
+		</div>
+	</div>
+</div>
+
+
+
+<div>
+	Content After
+</div>
+
+<a href="javascript:test()">test</a>
+
+
+</body>
+</html>
